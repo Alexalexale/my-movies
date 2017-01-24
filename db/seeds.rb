@@ -12,6 +12,6 @@ movies = [
   {title: "Raiders of the Lost Ark", release_date: '25-01-1992'}
 ]
 
-movies each do |movie|
+movies.each do |movie|
   Movie.create!(movie)
 end
