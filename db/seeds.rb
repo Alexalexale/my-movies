@@ -12,6 +12,24 @@ movies = [
   {title: "Raiders of the Lost Ark", release_date: '25-01-1992'}
 ]
 
+actors = [
+  {name:"Angelina Jolie", gender:"female"},
+  {name:"Will Smith", gender:"male"}
+]
+
+directors = [
+  {name:"Quentin Tarantino", gender:"male"},
+  {name:"Mel Gibson", gender:"male"},
+]
+
 movies.each do |movie|
   Movie.create!(movie)
+end
+
+actors.each do |actor|
+  Actor.create!(actor)
+end
+
+directors.each do |director|
+  Director.create!(director)
 end

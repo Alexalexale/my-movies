@@ -20,16 +20,6 @@ ActiveRecord::Schema.define(version: 20170124231859) do
     t.datetime "updated_at",   null: false
   end
 
-  create_table "professioanls", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "birthdate"
-    t.string   "gender"
-    t.string   "country"
-    t.string   "type"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "professionals", force: :cascade do |t|
     t.string   "name"
     t.datetime "birthdate"
